@@ -18,15 +18,6 @@ class PlaySoundsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        if let filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "wav"){
-//            let filePathUrl = NSURL.fileURLWithPath(filePath)
-//            audioPlayer = try? AVAudioPlayer(contentsOfURL: filePathUrl)
-//            audioPlayer.enableRate = true
-//        }else{
-//            print("The file is not present")
-//        }
-        
         audioPlayer = try? AVAudioPlayer(contentsOfURL: recievedAudio.filePathUrl)
         audioPlayer.enableRate = true
         
